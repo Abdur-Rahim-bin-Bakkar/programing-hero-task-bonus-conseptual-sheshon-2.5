@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --monish: "Mulish", sans-serif;
+    --orange:#FF5400;
+    --dark2:#424247;
+    --white:#ffffff;
+    --dark70:#rgba(19, 19, 24, 0.7);
+    --dark0:rgb(19, 19, 24);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--monish);
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+header{
+    padding-top: 50px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+header nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+header nav .logo span{
+    color: var(--orange);
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    list-style: none;
+}
+header nav ul li{
+    color:var(--dark2) ;
+}
+header nav ul li:first-child{
+    color: var(--orange);
+}
+.ham{
+    display: none;
+}
+
+/* main section  */
+main{
+    padding-top: 50px;
+}
+
+.selection-container{
+    background:linear-gradient(#131318b5 0%,#13131800 100%), url(../assets/Group\ 13\ \(1\)\ \(1\).png);
+    background-position: center;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 106px 20px;
+    text-align: center;
+}
+.selection-container h1{
+    font-size: 64px;
+    color: var(--white);
+}
+.selection-container p{
+    max-width: 676px;
+    margin: 0 auto;
+    color: var(--white);
+}
+.selection-container .selections{
+    /* height: 84px; */
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.selection-container .selections input , select{
+    width: 174px;
+    text-indent: 10px;
+    text-align: start;
+    height: 53px;
+    padding-left: 10px;
+    color: var(--dark70);
+    border: none;
+    border-radius: 8px;
+}
+.selection-container .selections select option{
+    color: var(--dark70);
+}
+.selection-container .selections button{
+    background-color: var(--orange);
+}
+button{
+    width: 150px;
+    height: 53px;
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--orange);
+}
+.selection-container .selections button i{
+    font-size: 30px;
+}
+
+
+
+.banner-section {
+    padding-top: 75px;
+    display: flex;
+    align-items: center;
+    gap: 53px;
+}
+.banner-section .banner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.banner-section .banner-content h1{
+    color: var(--dark0);
+    font-size: 40px;
+}
+.banner-content p{
+    line-height: 24px;
+}
+.banner-content p:first-child ,ul li{
+    color:#424247;
+}
+.banner-content .c{
+    color: #5A5A5D;
+}
+.banner-section img{
+    width: 100%;
+}
+
+.choose-section{
+    padding-top: 100px;
+    width: 100%;
+}
+
+
+
+.choose-section h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.choose-section p{
+    max-width: 643px;
+    margin: 0 auto;
+    margin-bottom:48px ;
+    text-align: center;
+    color: var(--dark2);
+    line-height: 24px;
+}
+
+.place-section{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,300px);
+    gap: 24px;
+}
+
+
+.place-section div:nth-child(1){
+    background: url(../assets/Rectangle\ 5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 6;
+
+
+}
+.place-section div:nth-child(2){
+    background: url(../assets/Rectangle\ 8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 6;
+
+}
+.place-section div:nth-child(3){
+    grid-column: span 4;
+    background: url(../assets/Rectangle\ 6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.place-section div:nth-child(4){
+    grid-column: span 5;
+    background: url(../assets/Rectangle\ 7.png);
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+}
+.place-section div:nth-child(5){
+    grid-column: span 3;
+    background: url(../assets/Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.place-section div:nth-child(6){
+    grid-column: span 5;
+    background: url(../assets/Rectangle\ 11.png);
+    background-size: cover;
+
+}
+.place-section div:nth-child(7){
+    grid-column: span 7;
+    background: url(../assets/Rectangle\ 10.png);
+    background-size: cover;
+
+}
+
+.place-section div{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--white);
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    header{
+        padding-top: 20px;
+    }
+    .ham{
+        display: block;
+    }
+    header nav ul{
+        display: none;
+    }
+    .selection-container{
+        padding-top: 20px;
+        gap: 10px;
+    }
+    main{
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .selection-container .selections{
+        width: 80%;
+
+        flex-direction: column;
+    }
+    .selection-container h1{
+        font-size: 22px;
+    }
+    .selection-container .selections input , select{
+    width: 100%;
+    height: 53px;
+    padding-left: 10px;
+}
+.selection-container .selections button{
+    width: 100%;
+}
+
+
+
+.banner-section{
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+
+.place-section{
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-rows: repeat(7,300px);
+}
+.place-section div:nth-child(1){
+    grid-column: span 12;
+}
+.place-section div:nth-child(2){
+    grid-column: span 12;
+}
+.place-section div:nth-child(3){
+    grid-column: span 12;
+}
+.place-section div:nth-child(4){
+    grid-column: span 12;
+}
+.place-section div:nth-child(5){
+    grid-column: span 12;
+}
+.place-section div:nth-child(6){
+    grid-column: span 12;
+}
+.place-section div:nth-child(7){
+    grid-column: span 12;
+}
+}
