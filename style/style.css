@@ -158,12 +158,12 @@ button{
 
 
 
-.choose-section h1{
+.title h1{
     font-size: 40px;
     text-align: center;
     margin-bottom: 24px;
 }
-.choose-section p{
+.title p{
     max-width: 643px;
     margin: 0 auto;
     margin-bottom:48px ;
@@ -242,6 +242,102 @@ button{
 
 
 
+.why{
+    padding-top: 100px;
+    width: 100%;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
+}
+
+.why .card{
+    padding: 32px;
+    width: 553px;
+    background-color: rgba(251, 181, 99, 0.2);
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 9px;
+}
+.why .card h1{
+
+}
+.why .card:nth-child(2){
+    background-color: rgba(41, 206, 246, 0.2);
+    border: 1px solid rgba(41, 206, 246, 0.2);
+}
+.why .card:nth-child(3){
+    background-color: rgba(233, 68, 68, 0.05);
+    border: 1px solid rgba(233, 68, 68, 0.05);
+
+}
+.why .card h1{
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.why .card p{
+    color: #5A5A5D;
+    line-height: 26px;
+}
+
+
+.deals-container{
+    padding-top: 100px;
+}
+
+.banner-deals{
+    background: url(../assets/deal-1.png);
+    padding: 55px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    /* flex-direction: row; */
+    justify-content: start;
+}
+.banner-deals:nth-child(even){
+    justify-content: end;
+
+}
+.banner-deals:nth-child(odd){
+    justify-content: start;
+    background: url(../assets/deal-2.png);
+}
+.banner-deals .deals-card{
+    max-width: 579px;
+    padding: 50px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    border: 2px solid white;
+}
+.banner-deals .deals-card span{
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.banner-deals .deals-card button{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:768px) {
     header{
@@ -312,5 +408,27 @@ button{
 }
 .place-section div:nth-child(7){
     grid-column: span 12;
+}
+
+.card-container{
+    flex-direction: column;
+}
+.card-container .card{
+    width: 100%;
+}
+.choose-section{
+    padding-top: 10px;
+}
+.title h1{
+    font-size: 24px;
+}
+.why{
+    padding-top: 10px;
+}
+.deals-container{
+    padding-top: 10px;
+}
+.banner-deals{
+    padding: 15px;
 }
 }
